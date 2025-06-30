@@ -40,102 +40,438 @@ ON TABLET (768px): Reset to padding-top: (230/16rem); using LESS, padding-top: c
 Doing this will complete the overlapping "breaking the container" look.
 -->
 
-<!-- ============================================ -->
+
+           <!-- ============================================ -->
 <!--                    Hero                      -->
 <!-- ============================================ -->
 
-<section id="hero-1249">
+<section id="hero-1950">
     <div class="cs-container">
         <div class="cs-content">
-            <h1 class="cs-title">Building Better, Together. Join Our Construction Journey</h1>
-            <p class="cs-text">
-                
-            </p>
-            <a href="" class="cs-button-solid">Get A Quote</a>
+            <h1 class="cs-title">Our Work Speaks For Itself</h1>
+            <div class="cs-flex-group">
+                <p class="cs-text">From a Sketch on a napkin to inspired discussion PDI Chicago has been Consistent on bringing Ideas to life</p>
+                <a href="" class="cs-button-solid">Read More</a>
+            </div>
         </div>
-        <ul class="cs-card-group">
-            <li class="cs-item">
-                <a href="" class="cs-link">
-                    <h3 class="cs-h3">Standard</h3>
-                    <p class="cs-item-text">
-                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
-                    </p>
-                </a>
-                <picture class="cs-item-background">
-                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/standardsign.jpg' | webp %}">
-                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/standardsign.jpg' | webp %}">
-                    <img decoding="async" src="{% getUrl '/assets/images/standardsign.jpg' | webp %}" alt="construction" width="413" height="374" aria-hidden="true">
-                </picture>
-            </li>
-            <li class="cs-item">
-                <a href="" class="cs-link">
-                    <h3 class="cs-h3">Architectual</h3>
-                    <p class="cs-item-text">
-                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
-                    </p>
-                </a>
-                <picture class="cs-item-background">
-                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/architectualsign.jpg' | webp %}">
-                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/architectualsign.jpg' | webp %}">
-                    <img decoding="async" src="{% getUrl '/assets/images/architectualsign.jpg' | webp %}" alt="construction" width="413" height="374" aria-hidden="true">
-                </picture>
-            </li>
-            <li class="cs-item">
-                <a href="" class="cs-link">
-                    <h3 class="cs-h3">Custom</h3>
-                    <p class="cs-item-text">
-                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
-                    </p>
-                </a>
-                <picture class="cs-item-background">
-                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/customsignage.jpg' | webp %}">
-                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/customsignage.jpg' | webp %}">
-                    <img decoding="async" src="{% getUrl '/assets/images/customsignage.jpg' | webp %}" alt="construction" width="413" height="374" aria-hidden="true">
-                </picture>
-            </li>
-        </ul>
     </div>
 
     <!-- Background Image, there's a background image in the CSS for the parallax effect you'll need to change as well if you swap out our images -->
     <picture class="cs-background">
-        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/Mockup 1.jpg' | webp %}">
-        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/Mockup 1.jpg' | webp %}">
-        <img decoding="async" src="{% getUrl '/assets/images/Mockup 1.jpg' | webp %}" alt="construction" width="2250" height="1500" aria-hidden="true">
+        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/mockup.jpg' | webp %}">
+        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/mockup.jpg' | webp %}">
+        <img decoding="async" src="{% getUrl '/assets/images/mockup.jpg' | webp %}" alt="restaurant" width="2250" height="1500" aria-hidden="true">
     </picture>
 </section>
+                                
+                                
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
 
+<!--
+    To add a 5th or 6th gallery or more, copy and paste the cs-button and change it's data-filter to th next number, in this case it's 5. Do the dame to the cs-gallery and its data-category number. And thats it!
+-->
 
+<section id="gallery-2281">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Our Portfolio</span>
+                <h2 class="cs-title">Featured Projects</h2>
+            </div>
+            <div class="cs-button-group">
+                <button class="cs-button" data-filter="one">
+                    Restuarant
+                </button>
+                <button class="cs-button" data-filter="two">
+                    Misc
+                </button>
+            </div>
+        </div>
+        <div class="cs-gallery-wrapper">
+            <!--Gallery 1-->
+            <div class="cs-gallery" data-category="one">
+                <!--Picture 1-->
+                <a class="cs-image" href="">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/rest/1.jpeg' | webp %}">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/rest/1.jpeg' | webp %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/portfolio/rest/1.jpeg' | webp %}" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">PDI</span>
+                        <span class="cs-project">Thai cuisine</span>
+                    </div>
+                </a>
+                <a class="cs-image" href="">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/rest/2.jpeg' | webp %}">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/rest/2.jpeg' | webp %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/portfolio/rest/2.jpeg' | webp %}" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">PDI</span>
+                        <span class="cs-project">5800 north cafe</span>
+                    </div>
+                </a>
+                <a class="cs-image" href="">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/rest/3.jpg' | webp %}">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/rest/3.jpg' | webp %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/portfolio/rest/3.jpg' | webp %}" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">PDI</span>
+                        <span class="cs-project">nespresso</span>
+                    </div>
+                </a>
+                <a class="cs-image" href="">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/rest/4.jpeg' | webp %}">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/rest/4.jpeg' | webp %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/portfolio/rest/4.jpeg' | webp %}" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">PDI</span>
+                        <span class="cs-project">whispers coffee & tea</span>
+                    </div>
+                </a>
+                <a class="cs-image" href="">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/rest/5.jpg' | webp %}">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/rest/5.jpg' | webp %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/portfolio/rest/5.jpg' | webp %}" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">PDI</span>
+                        <span class="cs-project">yolk</span>
+                    </div>
+                </a>
+                <a class="cs-image" href="">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/rest/6.jpeg' | webp %}">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/rest/6.jpeg' | webp %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/portfolio/rest/6.jpeg' | webp %}" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">PDI</span>
+                        <span class="cs-project">porkchop whiskey beer & bbq</span>
+                    </div>
+                </a>
+            </div>
+            <!--Gallery 2-->
+            <div class="cs-gallery cs-hidden" data-category="two">
+                <a class="cs-image" href="">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/misc/1.jpg' | webp %}">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/misc/1.jpg' | webp %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/portfolio/misc/1.jpg' | webp %}" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <!-- <span class="cs-tag">Hardscaping</span>
+                        <span class="cs-project">Stonemere Patio Retreat</span> -->
+                    </div>
+                </a>
+                <a class="cs-image" href="">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/misc/2.jpg' | webp %}">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/misc/2.jpg' | webp %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/portfolio/misc/2.jpg' | webp %}" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <!-- <span class="cs-tag">Hardscaping</span>
+                        <span class="cs-project">Stonemere Patio Retreat</span> -->
+                    </div>
+                </a>
+                <a class="cs-image" href="">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/misc/3.jpg' | webp %}">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/misc/3.jpg' | webp %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/portfolio/misc/3.jpg' | webp %}" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <!-- <span class="cs-tag">Hardscaping</span>
+                        <span class="cs-project">Stonemere Patio Retreat</span> -->
+                    </div>
+                </a>
+                <a class="cs-image" href="">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/misc/4.jpg' | webp %}">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/misc/4.jpg' | webp %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/portfolio/misc/4.jpg' | webp %}" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <!-- <span class="cs-tag">Hardscaping</span>
+                        <span class="cs-project">Stonemere Patio Retreat</span> -->
+                    </div>
+                </a>
+                <a class="cs-image" href="">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/misc/5.jpg' | webp %}">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/misc/5.jpg' | webp %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/portfolio/misc/5.jpg' | webp %}" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <!-- <span class="cs-tag">Hardscaping</span>
+                        <span class="cs-project">Stonemere Patio Retreat</span> -->
+                    </div>
+                </a>
+                <a class="cs-image" href="">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/portfolio/misc/6.jpg' | webp %}">
+                        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/portfolio/misc/6.jpg' | webp %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/portfolio/misc/6.jpg' | webp %}" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <!-- <span class="cs-tag">Hardscaping</span>
+                        <span class="cs-project">Stonemere Patio Retreat</span> -->
+                    </div>
+                </a>
+            </div>
+            <!--Gallery 3-->
+            <div class="cs-gallery cs-hidden" data-category="three">
+                <a class="cs-image" href="">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">Hardscaping</span>
+                        <span class="cs-project">Stonemere Patio Retreat</span>
+                    </div>
+                </a>
+                <a class="cs-image" href="">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">Hardscaping</span>
+                        <span class="cs-project">Stonemere Patio Retreat</span>
+                    </div>
+                </a>
+                <a class="cs-image" href="">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">Hardscaping</span>
+                        <span class="cs-project">Stonemere Patio Retreat</span>
+                    </div>
+                </a>
+                <a class="cs-image" href="">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">Hardscaping</span>
+                        <span class="cs-project">Stonemere Patio Retreat</span>
+                    </div>
+                </a>
+                <a class="cs-image" href="">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">Hardscaping</span>
+                        <span class="cs-project">Stonemere Patio Retreat</span>
+                    </div>
+                </a>
+                <a class="cs-image" href="">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">Hardscaping</span>
+                        <span class="cs-project">Stonemere Patio Retreat</span>
+                    </div>
+                </a>
+            </div>
+            <!--Gallery 4-->
+            <div class="cs-gallery cs-hidden" data-category="four">
+                <a class="cs-image" href="">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">Hardscaping</span>
+                        <span class="cs-project">Stonemere Patio Retreat</span>
+                    </div>
+                </a>
+                <a class="cs-image" href="">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">Hardscaping</span>
+                        <span class="cs-project">Stonemere Patio Retreat</span>
+                    </div>
+                </a>
+                <a class="cs-image" href="">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">Hardscaping</span>
+                        <span class="cs-project">Stonemere Patio Retreat</span>
+                    </div>
+                </a>
+                <a class="cs-image" href="">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">Hardscaping</span>
+                        <span class="cs-project">Stonemere Patio Retreat</span>
+                    </div>
+                </a>
+                <a class="cs-image" href="">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">Hardscaping</span>
+                        <span class="cs-project">Stonemere Patio Retreat</span>
+                    </div>
+                </a>
+                <a class="cs-image" href="">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg">
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">Hardscaping</span>
+                        <span class="cs-project">Stonemere Patio Retreat</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <a href="" class="cs-button-solid">View All</a>
+    </div>
+</section>
+                                
+<script>
+    class GalleryFilter {
+        filtersSelector = '.cs-button'
+        imagesSelector = '.cs-gallery'
+        activeClass = 'cs-active'
+        hiddenClass = 'cs-hidden'
 
+        constructor() {
+            const $filters = document.querySelectorAll(this.filtersSelector)
+            this.$activeFilter = $filters[0]
+            this.$images = document.querySelectorAll(this.imagesSelector)
 
+            this.$activeFilter.classList.add(this.activeClass)
 
+            for (const $filter of $filters) {
+            $filter.addEventListener('click', () => this.onClick($filter))
+            }
+        }
+
+        onClick($filter) {
+            this.filter($filter.dataset.filter)
+
+            const { activeClass } = this
+
+            this.$activeFilter.classList.remove(activeClass)
+            $filter.classList.add(activeClass)
+
+            this.$activeFilter = $filter
+        }
+
+        filter(filter) {
+            const showAll = filter == 'all'
+            const { hiddenClass } = this
+
+            for (const $image of this.$images) {
+            const show = showAll || $image.dataset.category == filter
+            $image.classList.toggle(hiddenClass, !show)
+            }
+        }
+        }
+
+    new GalleryFilter()
+                                
+</script>
+<div class="custom-shape-divider-bottom-1751317910">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+    </svg>
+</div>
+
+<style>
+    .custom-shape-divider-bottom-1751317910 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1751317910 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 61px;
+}
+
+.custom-shape-divider-bottom-1751317910 .shape-fill {
+    fill: #FDF4F4;
+}
+</style>
 
 <!-- ============================================ -->
 <!--                 Side By Side                 -->
 <!-- ============================================ -->
 
-<section id="sbs-2276">
+<section id="sbs-2276" style="background-color: #fdf4f4;">
     <div class="cs-container">
         <div class="cs-image-group">
             <picture class="cs-picture cs-picture1">
-                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/aboutsu1.jpg' | webp %}">
-                <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/aboutsu1.jpg' | webp %}">
-                <img aria-hidden="true" decoding="async" src="{% getUrl '/assets/images/aboutsu1.jpg' | webp %}" alt="construction site" width="413" height="492" loading="lazy">
+                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/macy.jpg' | webp %}">
+                <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/macy.jpg' | webp %}">
+                <img aria-hidden="true" decoding="async" src="{% getUrl '/assets/images/macy.jpg' | webp %}" alt="construction site" width="413" height="492" loading="lazy">
             </picture>
-            <a href="" class="cs-button-solid">Read More</a>
+            <a href="" class="cs-button-solid">Contact Us</a>
         </div>
         <div class="cs-content">
             <div class="cs-header">
                 <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">Creating Elegant Environments, One Detail At A Time</h2>
+                <h2 class="cs-title">Signing Your Vision</h2>
             </div>
             <div class="cs-wrapper">
                 <div class="cs-flex">
                     <p class="cs-text">
-                        At BuildStitch, we specialize in turning your dream projects into reality. From bespoke custom homes to intricate hardscaping and extensions, our expertise ensures a flawless journey from concept to completion. Whether you're planning a renovation or a ground-up build, our focus is on exceeding expectations every step of the way.
+                        From a Sketch on a napkin to inspired discussion PDI Chicago had been Consistent on bringing Ideas to life. No Job too Complicated , our Many Years of Experience leaves the Competition in the Dust. “ Our Work Speaks for Itself”. Experience working with Different Metals , Plastics and Lighting , and Materials we will figure a way to bring your Concept to Life. PDI is not limited to Signage , we have solutions to Custom CNC fabricate parts to Stream line your Job. From Design Concept , Permits , Fabrication ,to Installation we are a Full Service Company. 
                     </p>
-                    <img class="cs-signature" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/signature.png" decoding="async" loading="lazy" alt="signature" width="170" height="59" aria-hidden="true">
-                    <span class="cs-name">William John</span>
-                    <span class="cs-desc">Founder of Build Stitch</span>
+                    <!-- <img class="cs-signature" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/signature.png" decoding="async" loading="lazy" alt="signature" width="170" height="59" aria-hidden="true"> -->
+                    <span class="cs-name">PDI Chicago LTD.</span>
+                    <span class="cs-desc">Bringing Your Ideas To Life!</span>
                     <!--if you change this button class name, change the class name to rename it as well in the css at small desktop media query-->
                     <a href="" class="cs-button-solid">Get Started Today</a>
                 </div>
@@ -158,212 +494,84 @@ Doing this will complete the overlapping "breaking the container" look.
 
 
 <!-- ============================================ -->
-<!--                    Services                  -->
-<!-- ============================================ -->
-
-<section id="services-1254">
-    <div class="cs-container">
-        <div class="cs-content">
-            <div class="cs-flex-group">
-                <span class="cs-topper">Our Services</span>
-                <h2 class="cs-title">Professional Construction Services</h2>
-            </div>
-            <p class="cs-text">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
-            </p>
-        </div>
-        <ul class="cs-card-group">
-            <li class="cs-item">
-                <a href="" class="cs-link">
-                    <h3 class="cs-h3">Awnings</h3>
-                    <p class="cs-item-text">
-                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
-                    </p>
-                </a>
-                <picture class="cs-item-background">
-                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/awning.jpg' | webp %}">
-                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/awning.jpg' | webp %}">
-                    <img decoding="async" src="{% getUrl '/assets/images/awning.jpg' | webp %}" alt="construction" width="413" height="374" aria-hidden="true">
-                </picture>
-            </li>
-            <li class="cs-item">
-                <a href="" class="cs-link">
-                    <h3 class="cs-h3">Installation Services</h3>
-                    <p class="cs-item-text">
-                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
-                    </p>
-                </a>
-                <picture class="cs-item-background">
-                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/signinstall.jpg' | webp %}">
-                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/signinstall.jpg' | webp %}">
-                    <img decoding="async" src="{% getUrl '/assets/images/signinstall.jpg' | webp %}" alt="construction" width="413" height="374" aria-hidden="true">
-                </picture>
-            </li>
-            <li class="cs-item">
-                <a href="" class="cs-link">
-                    <h3 class="cs-h3">Custom Metal Work</h3>
-                    <p class="cs-item-text">
-                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
-                    </p>
-                </a>
-                <picture class="cs-item-background">
-                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/custommetal.jpg' | webp %}">
-                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/custommetal.jpg' | webp %}">
-                    <img decoding="async" src="{% getUrl '/assets/images/custommetal.jpg' | webp %}" alt="construction" width="413" height="374" aria-hidden="true">
-                </picture>
-            </li>
-            <li class="cs-item">
-                <a href="" class="cs-link">
-                    <h3 class="cs-h3">Real Estate Signage</h3>
-                    <p class="cs-item-text">
-                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
-                    </p>
-                </a>
-                <picture class="cs-item-background">
-                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/realestatesign.jpg' | webp %}">
-                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/realestatesign.jpg' | webp %}">
-                    <img decoding="async" src="{% getUrl '/assets/images/realestatesign.jpg' | webp %}" alt="construction" width="413" height="374" aria-hidden="true">
-                </picture>
-            </li>
-            <li class="cs-item">
-                <a href="" class="cs-link">
-                    <h3 class="cs-h3">Printed Services</h3>
-                    <p class="cs-item-text">
-                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
-                    </p>
-                </a>
-                <picture class="cs-item-background">
-                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/printedservices.jpg' | webp %}">
-                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/printedservices.jpg' | webp %}">
-                    <img decoding="async" src="{% getUrl '/assets/images/printedservices.jpg' | webp %}" alt="construction" width="413" height="374" aria-hidden="true">
-                </picture>
-            </li>
-            <li class="cs-item">
-                <a href="" class="cs-link">
-                    <h3 class="cs-h3">Architectual Lighting</h3>
-                    <p class="cs-item-text">
-                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
-                    </p>
-                </a>
-                <picture class="cs-item-background">
-                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/archlight.jpg' | webp %}">
-                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/archlight.jpg' | webp %}">
-                    <img decoding="async" src="{% getUrl '/assets/images/archlight.jpg' | webp %}" alt="construction" width="413" height="374" aria-hidden="true">
-                </picture>
-            </li>
-            <li class="cs-item">
-                <a href="" class="cs-link">
-                    <h3 class="cs-h3">Banners</h3>
-                    <p class="cs-item-text">
-                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
-                    </p>
-                </a>
-                <picture class="cs-item-background">
-                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/baners.jpg' | webp %}">
-                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/baners.jpg' | webp %}">
-                    <img decoding="async" src="{% getUrl '/assets/images/baners.jpg' | webp %}" alt="construction" width="413" height="374" aria-hidden="true">
-                </picture>
-            </li>
-            <li class="cs-item">
-                <a href="" class="cs-link">
-                    <h3 class="cs-h3">Window Prints, Decals, Large fomat prints.</h3>
-                    <p class="cs-item-text">
-                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
-                    </p>
-                </a>
-                <picture class="cs-item-background">
-                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/awning.jpg' | webp %}">
-                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/awning.jpg' | webp %}">
-                    <img decoding="async" src="{% getUrl '/assets/images/awning.jpg' | webp %}" alt="construction" width="413" height="374" aria-hidden="true">
-                </picture>
-            </li>
-        </ul>
-    </div>
-</section>
-
-
-<!-- ============================================ -->
 <!--                 Why Choose Us                -->
 <!-- ============================================ -->
-
 <section id="why-choose-1823">
     <div class="cs-container">
         <div class="cs-image-group">
             <picture class="cs-picture">
                 <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/whychooseus.jpg' | webp %}">
+                <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/handshake.jpg' | webp %}">
                 <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/whychooseus.jpg' | webp %}">
-                <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/whychooseus.jpg' | webp %}" alt="body builder" width="562" height="568">
+                <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/handshake.jpg' | webp %}">
+                <img style="border-radius: 8px;" loading="lazy" decoding="async" src="{% getUrl '/assets/images/handshake.jpg' | webp %}" alt="team at work" width="562" height="568">
             </picture>
-            <picture class="cs-floater">
+            <!-- <picture class="cs-floater">
                 <img class="cs-floater-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/weights.svg" alt="icon" width="59" height="48">
-            </picture>
+            </picture> -->
         </div>
         <div class="cs-content">
             <span class="cs-topper">Why Choose Us</span>
-            <h2 class="cs-title">Amazing Features Of Stitch Gym</h2>
+            <h2 class="cs-title">Why PDI Chicago Is Your Trusted Sign Partner</h2>
         </div>
         <div class="cs-flex">
-            <div class="cs-box">
-                <div class="cs-box-content" data-box="one">
-                    <img class="cs-box-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/red-house.svg" alt="icon" width="62" height="62">
+            <div class="cs-box" style="border-radius: 8px;">
+                <div class="cs-box-content" data-box="one" >
+                    <img class="cs-box-icon" loading="lazy" decoding="async" src="/assets/svgs/trustworthiness.svg" alt="icon" width="62" height="62">
                     <h3 class="cs-h3">Our Mission & Approach</h3>
                     <p class="cs-box-text">
-                        Take advantage of our spacious gym equipped with a wide range of gym fitness machines so you can achieve the maximum benefits.
+                        We partner with Chicago businesses to transform ideas into high-impact signage—combining creative design, permitting expertise, and seamless installation for a worry-free experience.
                     </p>
                 </div>
                 <div class="cs-box-content cs-hidden" data-box="two">
-                    <img class="cs-box-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/red-house.svg" alt="icon" width="62" height="62">
-                    <h3 class="cs-h3">State of The Art Equipment</h3>
+                    <img class="cs-box-icon" loading="lazy" decoding="async" src="/assets/svgs/quality.svg" alt="icon" width="62" height="62">
+                    <h3 class="cs-h3">Quality Materials & Craftsmanship</h3>
                     <p class="cs-box-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea distinctio ab officiis vel tenetur dolorem facilis odit cum molestias aperiam!
+                        From marine-grade metals and UV-resistant plastics to energy-efficient LEDs, we use premium components and precision fabrication to ensure every sign stands the test of time.
                     </p>
                 </div>
                 <div class="cs-box-content cs-hidden" data-box="three">
-                    <img class="cs-box-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/red-house.svg" alt="icon" width="62" height="62">
-                    <h3 class="cs-h3">Education & Top Trainers</h3>
+                    <img class="cs-box-icon" loading="lazy" decoding="async" src="/assets/svgs/experts.svg" alt="icon" width="62" height="62">
+                    <h3 class="cs-h3">Experienced Team & Permitting</h3>
                     <p class="cs-box-text">
-                        Molestiae illo odit eum iure quas error autem quibusdam in natus iste tenetur molestias expedita pariatur, modi qui.
+                        Our designers, engineers, and certified installers handle every step—from zoning approvals to final mounting—so you never worry about code compliance or safety.
                     </p>
                 </div>
                 <div class="cs-box-content cs-hidden" data-box="four">
-                    <img class="cs-box-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/red-house.svg" alt="icon" width="62" height="62">
-                    <h3 class="cs-h3">Series Results Based 
-                        on Training</h3>
+                    <img class="cs-box-icon" loading="lazy" decoding="async" src="/assets/svgs/result.svg" alt="icon" width="62" height="62">
+                    <h3 class="cs-h3">Results-Driven Signage Solutions</h3>
                     <p class="cs-box-text">
-                        Dicta cupiditate facilis ipsam impedit voluptatibus possimus iure ut distinctio, quo nisi. Adipisci, quos officiis asperiores quaerat delectus deserunt.
+                        We focus on signage that drives foot traffic and brand recognition—leveraging large-format printing, architectural lighting, and custom fabrication for measurable impact.
                     </p>
                 </div>
             </div>
-            <!--If you add more boxes and buttons, make sure to chnage the data attributes to increment. So if you added a 5th button, you'd need a data-filter="five" on the .cs-button and make a 5th cs-box with data-box="five" to match-->
             <div class="cs-button-group">
                 <button class="cs-button cs-active" data-filter="one">
                     <picture class="cs-icon-wrapper">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/house-1a.svg" alt="icon" width="32" height="32">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/trustworthiness.svg" alt="icon" width="32" height="32">
                     </picture>
                     <span class="cs-button-text">Our Mission & Approach</span>
                     <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-arrow.svg" alt="icon" width="32" height="32">
                 </button>
                 <button class="cs-button" data-filter="two">
                     <picture class="cs-icon-wrapper">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/hourglass-1a.svg" alt="icon" width="32" height="32">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/quality.svg" alt="icon" width="32" height="32">
                     </picture>
-                    <span class="cs-button-text">State of The Art Equipment</span>
+                    <span class="cs-button-text">Quality Materials & Craftsmanship</span>
                     <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-arrow.svg" alt="icon" width="32" height="32">
                 </button>
                 <button class="cs-button" data-filter="three">
                     <picture class="cs-icon-wrapper">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/book-1a.svg" alt="icon" width="32" height="32">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/experts.svg" alt="icon" width="32" height="32">
                     </picture>
-                    <span class="cs-button-text">Education & Top Trainers</span>
+                    <span class="cs-button-text">Experienced Team & Permitting</span>
                     <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-arrow.svg" alt="icon" width="32" height="32">
                 </button>
-                <button class="cs-button" data-filter="one">
+                <button class="cs-button" data-filter="four">
                     <picture class="cs-icon-wrapper">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/invoice-1a.svg" alt="icon" width="32" height="32">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/result.svg" alt="icon" width="32" height="32">
                     </picture>
-                    <span class="cs-button-text">Series Results Based on Training</span>
+                    <span class="cs-button-text">Results-Driven Signage Solutions</span>
                     <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-arrow.svg" alt="icon" width="32" height="32">
                 </button>
             </div>
@@ -375,247 +583,116 @@ Doing this will complete the overlapping "breaking the container" look.
 
 
 
+<div class="custom-shape-divider-top-1751319595">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+    </svg>
+</div>
+
+<style>
+    .custom-shape-divider-top-1751319595 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    background-color: #fdf4f4;
+}
+
+.custom-shape-divider-top-1751319595 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 90px;
+}
+
+.custom-shape-divider-top-1751319595 .shape-fill {
+    fill: #FFFFFF;
+}
+</style>
+
 <!-- ============================================ -->
-<!--                   Gallery                    -->
+<!--                  Services                    -->
 <!-- ============================================ -->
 
-<!--
-    To add a 5th or 6th gallery or more, copy and paste the cs-button and change it's data-filter to th next number, in this case it's 5. Do the dame to the cs-gallery and its data-category number. And thats it!
--->
-
-<section id="gallery-1449">
+<section id="services-2414" style="background-color: #fdf4f4;">
     <div class="cs-container">
         <div class="cs-content">
             <div class="cs-flex">
-                <span class="cs-topper">Gallery</span>
-                <h2 class="cs-title">Our Photo Gallery</h2>
+                <span class="cs-topper">Who We Serve</span>
+                <h2 class="cs-title">Proudly Serving All Of Chicago</h2>
+                <p class="cs-text">
+                    Whether you’re a small business, property manager, or busy franchisee, our services help keep your spot stand out!
+                </p>
+                <a href="" class="cs-button-solid">Get A Free Estimate</a>
             </div>
-            <div class="cs-button-group">
-                <button class="cs-button" data-filter="one">
-                    All
-                </button>
-                <button class="cs-button" data-filter="two">
-                    Global Warming
-                </button>
-                <button class="cs-button" data-filter="three">
-                    Climate Strike
-                </button>
-                <button class="cs-button" data-filter="four">
-                    Sustainable Energy
-                </button>
-            </div>
+            <div class="cs-image-group">
+                <picture class="cs-map">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/chicago.png' | webp %}">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/chicago.png' | webp %}">
+                    <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/chicago.png' | webp %}" alt="map of san jose" width="522" height="504">
+                </picture>
+                <!--Uncomment and remove the picture element if you want to swap in an iframe for your service area. Just copy and paste the iframe code and it will work!-->
+                <!-- <div class="cs-map cs-iframe">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d406268.9454942402!2d-122.14541772050325!3d37.29569939031045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcae48af93ff5%3A0xb99d8c0aca9f717b!2sSan%20Jose%2C%20CA!5e0!3m2!1sen!2sus!4v1751015343187!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div> -->
+                <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/squiggle-arrow2.svg" alt="graphic" width="34" height="73" aria-hidden="true">
+                <div class="cs-box">
+                    <span class="cs-box-text">
+                        Chicago & Surrounding Areas
+                    </span>
+                </div>
+            </div>        
         </div>
-        <div class="cs-gallery-wrapper">
-            <!--Gallery 1-->
-            <div class="cs-gallery" data-category="one">
-                <!--Picture 1-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/6ycdefzj5/pdichicago/imagssdfsde.png?updatedAt=1751313675821">
-                    <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/6ycdefzj5/pdichicago/imagssdfsde.png?updatedAt=1751313675821">
-                    <img loading="lazy" decoding="async" src="https://ik.imagekit.io/6ycdefzj5/pdichicago/imagssdfsde.png?updatedAt=1751313675821" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 2-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/6ycdefzj5/pdichicago/imanksfge.png?updatedAt=1751313726866">
-                    <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/6ycdefzj5/pdichicago/imanksfge.png?updatedAt=1751313726866">
-                    <img loading="lazy" decoding="async" src="https://ik.imagekit.io/6ycdefzj5/pdichicago/imanksfge.png?updatedAt=1751313726866" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 3-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/6ycdefzj5/pdichicago/imsufage.png?updatedAt=1751313752350">
-                    <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/6ycdefzj5/pdichicago/imsufage.png?updatedAt=1751313752350">
-                    <img loading="lazy" decoding="async" src="https://ik.imagekit.io/6ycdefzj5/pdichicago/imsufage.png?updatedAt=1751313752350" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 4-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/6ycdefzj5/pdichicago/impeaage.png?updatedAt=1751313785752">
-                    <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/6ycdefzj5/pdichicago/impeaage.png?updatedAt=1751313785752">
-                    <img loading="lazy" decoding="async" src="https://ik.imagekit.io/6ycdefzj5/pdichicago/impeaage.png?updatedAt=1751313785752" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 5-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/6ycdefzj5/pdichicago/image9008.png?updatedAt=1751313820106">
-                    <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/6ycdefzj5/pdichicago/image9008.png?updatedAt=1751313820106">
-                    <img loading="lazy" decoding="async" src="https://ik.imagekit.io/6ycdefzj5/pdichicago/image9008.png?updatedAt=1751313820106" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 6-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/6ycdefzj5/pdichicago/image4456w.png?updatedAt=1751313852210">
-                    <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/6ycdefzj5/pdichicago/image4456w.png?updatedAt=1751313852210">
-                    <img loading="lazy" decoding="async" src="https://ik.imagekit.io/6ycdefzj5/pdichicago/image4456w.png?updatedAt=1751313852210" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 7-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/6ycdefzj5/pdichicago/image98765.png?updatedAt=1751313887227">
-                    <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/6ycdefzj5/pdichicago/image98765.png?updatedAt=1751313887227">
-                    <img loading="lazy" decoding="async" src="https://ik.imagekit.io/6ycdefzj5/pdichicago/image98765.png?updatedAt=1751313887227" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 8-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/6ycdefzj5/pdichicago/imag035e.png?updatedAt=1751314007153">
-                    <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/6ycdefzj5/pdichicago/imag035e.png?updatedAt=1751314007153">
-                    <img loading="lazy" decoding="async" src="https://ik.imagekit.io/6ycdefzj5/pdichicago/imag035e.png?updatedAt=1751314007153" alt="gallery" width="305" height="400">
-                </picture>
-            </div>
-            <!--Gallery 2-->
-            <div class="cs-gallery cs-hidden" data-category="two">
-                <!--Picture 1-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 2-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/melting-ice.jpeg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/melting-ice.jpeg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/melting-ice.jpeg" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 3-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/windmills.jpeg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/windmills.jpeg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/windmills.jpeg" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 4-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign2.jpeg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign2.jpeg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign2.jpeg" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 5-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/falling-rocks.jpeg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/falling-rocks.jpeg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/falling-rocks.jpeg" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 6-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign4.jpeg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign4.jpeg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign4.jpeg" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 7-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign3.jpeg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign3.jpeg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign3.jpeg" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 8-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/desert-tree.jpeg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/desert-tree.jpeg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/desert-tree.jpeg" alt="gallery" width="305" height="400">
-                </picture>
-            </div>
-            <!--Gallery 3-->
-            <div class="cs-gallery cs-hidden" data-category="three">
-                <!--Picture 1-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 2-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/melting-ice.jpeg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/melting-ice.jpeg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/melting-ice.jpeg" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 3-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/windmills.jpeg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/windmills.jpeg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/windmills.jpeg" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 4-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign2.jpeg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign2.jpeg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign2.jpeg" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 5-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/falling-rocks.jpeg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/falling-rocks.jpeg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/falling-rocks.jpeg" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 6-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign4.jpeg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign4.jpeg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign4.jpeg" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 7-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign3.jpeg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign3.jpeg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign3.jpeg" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 8-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/desert-tree.jpeg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/desert-tree.jpeg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/desert-tree.jpeg" alt="gallery" width="305" height="400">
-                </picture>
-            </div>
-            <!--Gallery 4-->
-            <div class="cs-gallery cs-hidden" data-category="four">
-                <!--Picture 1-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 2-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/melting-ice.jpeg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/melting-ice.jpeg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/melting-ice.jpeg" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 3-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/windmills.jpeg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/windmills.jpeg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/windmills.jpeg" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 4-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign2.jpeg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign2.jpeg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign2.jpeg" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 5-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/falling-rocks.jpeg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/falling-rocks.jpeg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/falling-rocks.jpeg" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 6-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign4.jpeg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign4.jpeg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign4.jpeg" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 7-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign3.jpeg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign3.jpeg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign3.jpeg" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 8-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/desert-tree.jpeg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/desert-tree.jpeg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/desert-tree.jpeg" alt="gallery" width="305" height="400">
-                </picture>
-            </div>
-        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/domino.jpg' | webp %}">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/domino.jpg' | webp %}">
+                    <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/domino.jpg' | webp %}" alt="man with dog" width="184" height="200">
+                </picture>  
+                <h3 class="cs-h3">Franchise</h3>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/smb.jpeg' | webp %}">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/smb.jpeg' | webp %}">
+                    <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/smb.jpeg' | webp %}" alt="man with dog" width="184" height="200">
+                </picture>  
+                <h3 class="cs-h3">Small Business</h3>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/hutch.jpg' | webp %}">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/hutch.jpg' | webp %}">
+                    <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/hutch.jpg' | webp %}" alt="man with dog" width="184" height="200">
+                </picture>  
+                <h3 class="cs-h3">Restaurant</h3>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/custom.jpg' | webp %}">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/custom.jpg' | webp %}">
+                    <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/custom.jpg' | webp %}" alt="man with dog" width="184" height="200">
+                </picture>  
+                <h3 class="cs-h3">Custom</h3>
+            </li>
+        </ul>
     </div>
 </section>
                                 
-                                
-                                
+
 
 
 
@@ -635,17 +712,17 @@ Doing this will complete the overlapping "breaking the container" look.
             <li class="cs-item">
                 <div class="cs-flex-group">
                     <picture class="cs-picture">
-                        <img class="cs-profile" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-headshot1.jpeg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                        <img class="cs-profile" src="/assets/svgs/user.svg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
                     </picture>
                     <span class="cs-name">
-                        Britney Allison
-                        <span class="cs-job">Founder of Yokoloko</span>
+                        Nick Halimi
+                        <span class="cs-job">Satisfied Customer</span>
                     </span>
                 </div>
                 <div class="wrapper">
                     <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
                     <p class="cs-review">
-                    Stitch Consulting transformed our business strategy Their expert consultants provided ingenious insights that propelled us towards success. Their dedication and innovative solutions are truly commendable.
+                    George is awesome. Did my sign for my new pizza place in old town. Sign came out batter then expected. Hired him again for 2nd sign. Will definitely work with him again in the future.
                     </p>
                 </div>
                 <!--Quote Icon-->
@@ -654,17 +731,17 @@ Doing this will complete the overlapping "breaking the container" look.
             <li class="cs-item">
                 <div class="cs-flex-group">
                     <picture class="cs-picture">
-                        <img class="cs-profile" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/review2.png" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                        <img class="cs-profile" src="/assets/svgs/user.svg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
                     </picture>
                     <span class="cs-name">
-                        Brooklyn Simmons
-                        <span class="cs-job">Founder of Yokoloko</span>
+                        Joseph Scharnak
+                        <span class="cs-job">Happy Customer</span>
                     </span>
                 </div>
                 <div class="wrapper">
                     <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
                     <p class="cs-review">
-                    Stitch Consulting transformed our business strategy Their expert consultants provided ingenious insights that propelled us towards success. Their dedication and innovative solutions are truly commendable.
+                    George was great to work with, he helped me out on a few different projects including a special custom project for a boat. His prices are fair, he is responsive, answers text messages, keeps appointments and his work looks great. I would use George and PDI Chicago again.
                     </p>
                 </div>
                 <!--Quote Icon-->
@@ -673,17 +750,18 @@ Doing this will complete the overlapping "breaking the container" look.
             <li class="cs-item">
                 <div class="cs-flex-group">
                     <picture class="cs-picture">
-                        <img class="cs-profile" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-headshot2.jpeg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                        <img class="cs-profile" src="/assets/svgs/user.svg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
                     </picture>
                     <span class="cs-name">
-                        Cameron Williamson
-                        <span class="cs-job">Founder of Yokoloko</span>
+                        Ben Gee
+                        <span class="cs-job">Satisfied Customer</span>
                     </span>
                 </div>
                 <div class="wrapper">
                     <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
                     <p class="cs-review">
-                    Stitch Consulting transformed our business strategy Their expert consultants provided ingenious insights that propelled us towards success. Their dedication and innovative solutions are truly commendable.
+                    Love the new sign. Very bright and my tenants love the visibility. The LED lights are terrific. Have had positive experience with George in the past and would use him again. Thanks again George 👍🏼
+
                     </p>
                 </div>
                 <!--Quote Icon-->
