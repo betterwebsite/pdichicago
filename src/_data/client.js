@@ -1,13 +1,13 @@
 module.exports = {
-    name: "Code Stitch Web Designs",
+    name: "pdichicago",
     email: "help@codestitch.app",
     phoneForTel: "555-779-4407",
     phoneFormatted: "(555) 779-4407",
     address: {
         lineOne: "First Address Line",
         lineTwo: "Second Address Line",
-        city: "Denver",
-        state: "CO",
+        city: "chicago",
+        state: "IL",
         zip: "80206",
         country: "US",
         mapLink: "https://maps.app.goo.gl/TEdS5KoLC9ZcULuQ6",
