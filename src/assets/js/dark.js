@@ -1,40 +1,82 @@
-//
-//    The Dark Mode System
-//
+document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('#why-choose-1823 .cs-button');
+    const boxContents = document.querySelectorAll('#why-choose-1823 .cs-box-content');
 
-// helper functions to toggle dark mode
-function enableDarkMode() {
-    document.body.classList.add("dark-mode");
-    localStorage.setItem("theme", "dark");
-}
-function disableDarkMode() {
-    document.body.classList.remove("dark-mode");
-    localStorage.setItem("theme", "light");
-}
+    // Function to show the corresponding box content and hide others
+    function showBoxContent(button) {
+        const filterValue = button.getAttribute('data-filter');
 
-// determines a new users dark mode preferences
-function detectColorScheme() {
-    // default to the light theme
-    let theme = "light";
+        boxContents.forEach(box => {
+            if (box.getAttribute('data-box') === filterValue) {
+                box.classList.remove('cs-hidden');
+            } else {
+                box.classList.add('cs-hidden');
+            }
+        });
 
-    // check localStorage for a saved 'theme' variable. if it's there, the user has visited before, so apply the necessary theme choices
-    if (localStorage.getItem("theme")) {
-        theme = localStorage.getItem("theme");
-    }
-    // if it's not there, check to see if the user has applied dark mode preferences themselves in the browser
-    else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        theme = "dark";
+        buttons.forEach(btn => {
+            if (btn === button) {
+                btn.classList.add('cs-active');
+            } else {
+                btn.classList.remove('cs-active');
+            }
+        });
     }
 
-    // if there is no preference set, the default of light will be used. apply accordingly
-    theme === "dark" ? enableDarkMode() : disableDarkMode();
-}
+    // Event listeners for screens below 1024px
+    if (window.matchMedia('(max-width: 1024px)').matches) {
+        buttons.forEach(button => {
+            button.addEventListener('click', () => showBoxContent(button));
+        });
+    }
 
-// run on page load
-detectColorScheme();
-
-// add event listener to the dark mode button toggle
-document.getElementById("dark-mode-toggle").addEventListener("click", () => {
-    // on click, check localStorage for the dark mode value, use to apply the opposite of what's saved
-    localStorage.getItem("theme") === "light" ? enableDarkMode() : disableDarkMode();
+    // Event listeners for screens above 1024px
+    if (window.matchMedia('(min-width: 1024px)').matches) {
+        buttons.forEach(button => {
+            button.addEventListener('mouseover', () => showBoxContent(button));
+        });
+    }
 });
+   
+class GalleryFilter {
+    filtersSelector = '.cs-button'
+    imagesSelector = '.cs-gallery'
+    activeClass = 'cs-active'
+    hiddenClass = 'cs-hidden'
+
+    constructor() {
+        const $filters = document.querySelectorAll(this.filtersSelector)
+        this.$activeFilter = $filters[0]
+        this.$images = document.querySelectorAll(this.imagesSelector)
+
+        this.$activeFilter.classList.add(this.activeClass)
+
+        for (const $filter of $filters) {
+        $filter.addEventListener('click', () => this.onClick($filter))
+        }
+    }
+
+    onClick($filter) {
+        this.filter($filter.dataset.filter)
+
+        const { activeClass } = this
+
+        this.$activeFilter.classList.remove(activeClass)
+        $filter.classList.add(activeClass)
+
+        this.$activeFilter = $filter
+    }
+
+    filter(filter) {
+        const showAll = filter == 'all'
+        const { hiddenClass } = this
+
+        for (const $image of this.$images) {
+        const show = showAll || $image.dataset.category == filter
+        $image.classList.toggle(hiddenClass, !show)
+        }
+    }
+    }
+
+new GalleryFilter()
+                            
